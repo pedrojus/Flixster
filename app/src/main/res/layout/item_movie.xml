@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:textSize="24sp"
+        tools:text="Shang-Chi and the Legend of the Ten Rings" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        tools:text="Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization." />
+</RelativeLayout>
