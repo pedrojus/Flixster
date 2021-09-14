@@ -24,6 +24,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="24sp"
         tools:text="Shang-Chi and the Legend of the Ten Rings" />
 
@@ -35,5 +36,6 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         tools:text="Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization." />
 </RelativeLayout>
