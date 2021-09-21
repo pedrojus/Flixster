@@ -18,7 +18,6 @@ import com.example.flixster.MovieDetailsActivity;
 import com.example.flixster.R;
 import com.example.flixster.models.Movie;
 
-import org.jetbrains.annotations.NotNull;
 import org.parceler.Parcels;
 
 import java.util.List;
@@ -74,7 +73,7 @@ public class ComplexMovieAdapter extends RecyclerView.Adapter<ComplexMovieAdapte
 
     @Override
     public int getItemViewType(int position) {
-        if (movies.get(position).getNumStars() > 5) {
+        if (movies.get(position).getVoteAverage() > 5) {
             return POPULAR_MOVIE;
         }
         return -1;
