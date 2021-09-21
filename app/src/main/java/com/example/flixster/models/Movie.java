@@ -3,6 +3,7 @@ package com.example.flixster.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,8 @@ public class Movie {
         overview = jsonObject.getString("overview");
         numStars = jsonObject.getInt("vote_average");
     }
+
+    public Movie() {}
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
         List<Movie> movies = new ArrayList<>();
